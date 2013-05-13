@@ -18,18 +18,24 @@
         display: block;
       }
       .white, .black {
-        width: 50px;
-        border: 1 solid gray;
+        width: 70px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 15px;
+        margin: 3px;
       }
       .black {
         background-color: black;
+        border-color: #444;
       }
       .white {
         background-color: white;
+        border-color: #ccc;
       }
     </style>
   </head>
   <body>
+    <button onclick="game.reset()">reset</button>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
