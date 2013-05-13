@@ -40,7 +40,7 @@ var future_score = function() {
 }
 
 var best_choice = function(scoreboard, player) {
-  if (typeof(player) === undefined) player = 1;
+  if (typeof(player) === "undefined") player = 1;
   var scorelist = scoreboard.reduce(function(accu, tower) { return accu.concat(tower) }, [])
   var choice = scorelist.reduce(function(accu, element) {
     if (Math.abs(element[2]) > Math.abs(accu[2]) && field[element[0]][element[1]] == player ) {
