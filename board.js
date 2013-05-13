@@ -31,8 +31,7 @@ var game = (function() {
             game.draw(field)
           })
       stones
-        .exit().transition().style("opacity", 0)
-          .delay(100).remove()
+        .exit().transition().style("opacity", 0).delay(20).remove()
 
       console.log(board);
       console.log(towers);
